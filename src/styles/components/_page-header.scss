@@ -16,3 +16,12 @@
     }
 }
 
+.page-header__subtitle {
+    font-weight: 100;
+    font-size: $font-size-small;
+    font-style: italic;
+    margin: $s-size 0 0 0;
+    span {
+        font-weight: bold;
+    }
+}
