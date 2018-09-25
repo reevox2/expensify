@@ -25,7 +25,6 @@ export const startFacebookLogin = () => {
         return firebase.auth().signInWithPopup(facebookAuthProvider)
             .then(result => console.log(result))
             .catch(err => {
-                console.log(err)
                 const credential = err.credential
                 const email = err.email;
                 if (err.code === 'auth/account-exists-with-different-credential') {
